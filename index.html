@@ -1,27 +1,857 @@
-<!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>안마의자 시장 인사이트 | 2026 Dashboard</title>
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>안산시 인구 실시간 대시보드</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <style>
-:root{--bg:#090f1c;--panel:#111c2e;--panel2:#152238;--edge:#26364e;--muted:#99adc7;--text:#eff6ff;--cyan:#38d7d1;--blue:#729aff;--gold:#f3be6b;--red:#ff858a;--green:#70dba8;--purple:#bd9cff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.65 'Pretendard','Noto Sans KR',system-ui,-apple-system,sans-serif}a{color:var(--cyan);text-decoration:none}button,input{font:inherit}button{cursor:pointer}.shell{display:grid;grid-template-columns:240px minmax(0,1fr);min-height:100vh}.sidebar{background:#0d1727;border-right:1px solid var(--edge);padding:30px 18px;position:sticky;top:0;height:100vh}.brand{font-weight:850;font-size:21px;letter-spacing:-.7px;line-height:1.25}.brand b{color:var(--cyan)}.brand small{font-size:10px;letter-spacing:2.5px;color:var(--muted);display:block;margin-top:10px}.nav{margin-top:44px;display:grid;gap:8px}.nav a{padding:12px 14px;border-radius:11px;color:#adbad0}.nav a:hover,.nav a.active{background:#1a3146;color:#f3fbff}.sidefoot{position:absolute;bottom:25px;color:var(--muted);font-size:11px;left:30px;right:18px}.main{padding:34px clamp(20px,4vw,70px) 70px;max-width:1660px;width:100%;margin:auto}.top{display:flex;gap:15px;align-items:start;justify-content:space-between}.eyebrow{color:var(--cyan);font-weight:700;letter-spacing:2px;font-size:11px}.top h1{font-size:clamp(27px,3vw,43px);letter-spacing:-1.7px;line-height:1.25;margin:10px 0}.desc{color:var(--muted);max-width:850px}.tools{display:flex;gap:8px}.btn{background:#1b314b;color:#fff;border:1px solid #36516a;padding:9px 13px;border-radius:9px;white-space:nowrap}.btn:hover{background:#2b4663}.stamp{display:inline-block;margin:13px 0 5px;padding:6px 11px;border:1px solid #34516b;background:#132239;color:var(--muted);border-radius:30px;font-size:12px}.grid{display:grid;gap:16px}.kpis{grid-template-columns:repeat(4,minmax(0,1fr));margin:28px 0}.card{background:linear-gradient(150deg,#142238,#101a2b);border:1px solid var(--edge);border-radius:16px;padding:22px;min-width:0;box-shadow:0 8px 25px #00000018}.kpi .label{color:var(--muted);font-size:12px}.kpi .num{font-size:clamp(23px,2.7vw,35px);font-weight:800;letter-spacing:-1.3px;margin:12px 0 4px}.kpi .note{font-size:11px;color:var(--muted)}.tag{display:inline-block;font-size:10px;border:1px solid #426277;color:#a8e9ed;border-radius:6px;padding:2px 6px;margin-left:5px;vertical-align:middle}.tag.estimate{border-color:#7b6244;color:var(--gold)}.tag.uncertain{border-color:#8d575c;color:var(--red)}section{scroll-margin-top:25px;margin:40px 0}.section-title{font-size:23px;letter-spacing:-.7px;margin:0 0 5px}.section-sub{color:var(--muted);font-size:12px;margin:0 0 16px}.two{grid-template-columns:1.16fr 1fr}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card h3{margin:0 0 16px;font-size:16px}.card h3 span{color:var(--muted);font-size:11px;font-weight:400}.chart{min-height:240px;position:relative}.chart svg{width:100%;height:auto;display:block}.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-top:12px}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}.insight{padding:15px 18px;border-left:3px solid var(--cyan);background:#112b3b;border-radius:0 10px 10px 0;color:#d6e8f7;margin-top:16px}.columns{display:grid;grid-template-columns:1fr 1fr;gap:16px}.hbar{display:grid;grid-template-columns:108px 1fr 60px;align-items:center;gap:9px;margin:12px 0}.hbar .track{height:10px;border-radius:10px;background:#27344b;overflow:hidden}.hbar .fill{height:100%;border-radius:10px;background:var(--cyan)}.hbar .val{text-align:right;font-weight:700}.data-table{width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap}.scroll{overflow:auto}.data-table th{text-align:left;color:var(--muted);font-weight:600;padding:12px 11px;border-bottom:1px solid #35506a}.data-table td{padding:12px 11px;border-bottom:1px solid #24354b}.data-table tr:last-child td{border-bottom:0}.data-table td:first-child{font-weight:700}.data-table td:last-child{color:#b0c1d4}.switches{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 10px}.switches button{border:1px solid #36506b;background:#14243b;border-radius:8px;color:#aac0db;padding:5px 10px}.switches button.on{background:#274466;color:#fff;border-color:#76a1d6}.badge{font-size:11px;border-radius:7px;padding:4px 7px;background:#21344c;color:#c4d7f1}.opportunity{position:relative;padding-top:28px}.opportunity .rank{font-size:11px;color:var(--cyan);font-weight:800}.opportunity h3{font-size:19px;margin:8px 0}.opportunity p{color:var(--muted);font-size:12px}.rating{display:flex;gap:3px;margin-top:15px}.rating i{display:block;height:6px;flex:1;background:#283a51;border-radius:4px}.rating i.filled{background:var(--cyan)}.risk{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #26364b;padding:13px 0;gap:10px}.risk:last-child{border:0}.risk strong{font-size:12px}.risk em{font-size:11px;font-style:normal;color:var(--red);background:#422b36;padding:4px 9px;border-radius:8px;white-space:nowrap}.risk em.mid{color:var(--gold);background:#443929}.source-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.source-list a{padding:10px 11px;background:#142238;border:1px solid #2c3e58;border-radius:9px;color:#b9d4ee;overflow-wrap:anywhere;font-size:11px}.muted{color:var(--muted)}.control{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.control input{accent-color:var(--cyan);min-width:180px;flex:1}.scenario-result{display:flex;gap:15px;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:20px;border-radius:12px;background:#0b2736;margin-top:16px}.scenario-result strong{font-size:28px;color:var(--cyan)}.tiny{font-size:11px;color:var(--muted)}.score{display:flex;align-items:center;gap:10px;margin-top:16px}.score .val{font-size:27px;font-weight:800;color:var(--gold)}.score .track{flex:1;height:8px;background:#28374c;border-radius:9px}.score .fill{height:100%;background:linear-gradient(90deg,#f39974,#efd277);border-radius:9px}.narrative{font-size:12px;color:#c5d7eb}.warn{color:var(--gold)}.footer{margin-top:35px;border-top:1px solid var(--edge);padding-top:19px;color:var(--muted);font-size:11px}#mobile-nav{display:none}@media(max-width:1100px){.sidebar{display:none}.shell{display:block}.main{padding:24px}#mobile-nav{display:flex;overflow:auto;gap:10px;margin:18px 0}#mobile-nav a{white-space:nowrap;background:#17263c;padding:7px 11px;border-radius:7px;color:#dce8fa}.kpis{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){.top{display:block}.tools{margin-top:12px}.kpis,.two,.three,.columns,.source-list{grid-template-columns:1fr}.card{padding:17px}.main{padding:18px}.hbar{grid-template-columns:88px 1fr 48px}.section-title{font-size:21px}}@media print{body{background:white;color:#102035}.sidebar,#mobile-nav,.tools,.switches{display:none!important}.shell{display:block}.card{background:white;box-shadow:none;border:1px solid #ddd;break-inside:avoid}.main{padding:12px}.desc,.muted,.section-sub,.kpi .label,.kpi .note{color:#445}.section-title{color:#123}.kpis{grid-template-columns:repeat(4,1fr)}.two,.columns{grid-template-columns:1fr 1fr}section{page-break-inside:avoid}.chart svg text{fill:#555}}
-</style></head><body><div class="shell"><aside class="sidebar"><div class="brand">WELLNESS<b> / DATA</b><small>MARKET INTELLIGENCE</small></div><nav class="nav"><a class="active" href="#overview">01　시장 개요</a><a href="#market">02　시장 성장</a><a href="#competition">03　경쟁 구도</a><a href="#customer">04　고객·품질</a><a href="#strategy">05　전략·기회</a><a href="#confidence">06　신뢰도</a><a href="#sources">07　출처</a></nav><div class="sidefoot">2026.11.11 기준<br>국내 중심 · 글로벌 비교<br>첨부 심층조사 보고서 기반</div></aside><main class="main">
-<header id="overview" class="top"><div><div class="eyebrow">INDUSTRY INTELLIGENCE / 2026</div><h1>안마의자 시장<br>전략 인사이트 대시보드</h1><p class="desc">내수 성숙화, 렌탈 경쟁 심화, 소형화와 관리서비스 중심의 전환을 데이터로 살펴봅니다. 수치마다 <b>기준연도·자료 성격·불확실성</b>을 구분했습니다.</p><div class="stamp">● 보고서 기준일 2026.11.11 · 국내 중심 / 글로벌 비교</div></div><div class="tools"><button class="btn" onclick="window.print()">⎙ PDF 인쇄</button><button class="btn" id="download">↓ HTML 저장</button></div></header>
-<nav id="mobile-nav"><a href="#market">시장</a><a href="#competition">경쟁</a><a href="#customer">고객</a><a href="#strategy">전략</a><a href="#confidence">신뢰도</a><a href="#sources">출처</a></nav>
-<div class="grid kpis"><article class="card kpi"><div class="label">국내 시장 규모 · 2025 <span class="tag estimate">업계 추정</span></div><div class="num" style="color:var(--cyan)">1.0~1.6조원</div><div class="note">출처별 불일치 · 단일 공식값 확인 불가 [S2·S3]</div></article><article class="card kpi"><div class="label">글로벌 안마의자 · 2030 <span class="tag estimate">전망</span></div><div class="num">75.1억 달러</div><div class="note">2026~30 전망 CAGR 9.2% [S4]</div></article><article class="card kpi"><div class="label">상위 3사 점유율 · 2021 <span class="tag">과거 자료</span></div><div class="num">약 85%</div><div class="note">2026년 현재 점유율로 사용 금지 [S1]</div></article><article class="card kpi"><div class="label">안마의자 피해구제 · 2021~24 Q1</div><div class="num" style="color:var(--gold)">508건</div><div class="note">의료용구 피해구제 1,188건 중 [S17]</div></article></div>
-<div class="insight"><strong>핵심 시사점</strong> · 국내는 신규 보급 중심에서 교체·보상판매·소형화·A/S 중심으로 이동 중. 신규 대형 프리미엄 브랜드 진입보다는 <b>가구형·B2B·리퍼비시·기술 모듈</b>의 실증이 우선이라는 보고서의 분석적 판단입니다. 미래 수익성은 <b class="warn">추측입니다.</b></div>
-<section id="market"><h2 class="section-title">01. 시장 규모와 성장 동력</h2><p class="section-sub">국내 장기 추세는 공정위 의결문 내 사업자 제출자료, 글로벌 수치는 시장조사기관 전망 [S1·S4]</p><div class="grid two"><div class="card"><h3>국내 시장의 장기 확대 <span>단위: 억 원 / 2020년 정확한 수치 미확인으로 제외</span></h3><div class="chart" id="domestic-chart"></div><div class="legend"><span><i class="dot" style="background:var(--cyan)"></i>공정위 자료 내 수치 · 2007~2021</span></div><p class="tiny">2024년 업계 추정 약 1조 원, 2025년 복수 추정 1.0~1.6조 원은 정의 불명확·출처 불일치로 이 추세선에 연결하지 않았습니다.</p></div><div class="card"><h3>글로벌 안마의자 성장 전망 <span>단위: 억 달러</span></h3><div class="chart" id="global-chart"></div><div class="legend"><span><i class="dot" style="background:var(--blue)"></i>2025 추정</span><span><i class="dot" style="background:var(--cyan)"></i>2026·2030 추정/전망</span></div><p class="tiny">전체 마사지 장비 시장(Grand View Research)과 정의가 달라 직접 비교·합산 불가 [S4·S5].</p></div></div>
-<div class="grid two" style="margin-top:16px"><div class="card"><h3>2030년 국내 시장 시나리오 <span class="tag uncertain">전부 가정 / 추측입니다</span></h3><p class="narrative">2025년 시장 1.3조 원을 가정한 5년 복리성장 모델. 성장률 조절 시 2030년 추정값을 즉시 계산합니다.</p><div class="control"><span>연평균 성장률</span><input id="cagr" type="range" min="-5" max="8" step="0.5" value="1"><strong id="cagr-val">+1.0%</strong></div><div class="scenario-result"><div><div class="tiny">2030년 시뮬레이션</div><strong id="scenario-value">1.37조 원</strong></div><span id="scenario-tag" class="badge">기준 시나리오</span></div><div class="legend"><span>하방 -2% → 1.18조</span><span>기준 +1% → 1.37조</span><span>상방 +4% → 1.58조</span></div></div><div class="card"><h3>신규사업 시장 접근 모델 <span class="tag uncertain">임의 가정</span></h3><div class="hbar"><span>TAM</span><div class="track"><div class="fill" style="width:100%"></div></div><div class="val">1.3조</div></div><div class="hbar"><span>SAM (20%)</span><div class="track"><div class="fill" style="width:20%;background:var(--blue)"></div></div><div class="val">2,600억</div></div><div class="hbar"><span>SOM (SAM 3%)</span><div class="track"><div class="fill" style="width:.6%;min-width:4px;background:var(--gold)"></div></div><div class="val">78억</div></div><p class="narrative">평균 판매단가 300만 원을 가정하면 SOM 78억 원은 연간 약 2,600대에 해당. <b class="warn">전부 추측입니다.</b> 실제 수요 예측치가 아닙니다.</p></div></div></section>
-<section id="competition"><h2 class="section-title">02. 경쟁 구도와 실적</h2><p class="section-sub">회사 전체 연결매출과 안마의자 매출은 다릅니다. 업종·사업부별 구성이 서로 달라 점유율처럼 비교하면 안 됩니다.</p><div class="grid two"><div class="card"><h3>바디프랜드 vs 세라젬 <span>2021~2025 연결매출 · 억 원</span></h3><div class="switches"><button class="on" data-series="body">바디프랜드</button><button class="on" data-series="ceragem">세라젬</button></div><div class="chart" id="company-chart"></div><p class="tiny">매출은 척추관리 의료기기 등 각 사 다른 사업을 포함. 안마의자 단독 매출 아님 [S8·S16].</p></div><div class="card"><h3>2025년 기업별 연결 실적</h3><div class="scroll"><table class="data-table"><thead><tr><th>기업</th><th>매출</th><th>영업이익</th></tr></thead><tbody><tr><td>바디프랜드</td><td>4,226억</td><td>115억</td></tr><tr><td>세라젬</td><td>5,498억</td><td>258억</td></tr><tr><td>코웨이</td><td>4조 9,636억</td><td>8,787억</td></tr><tr><td>복정제형(코지마)</td><td>736억</td><td>약 6.8억</td></tr></tbody></table></div><p class="tiny">코웨이는 전사 매출 기준으로 비렉스 안마의자만의 매출이 아님. 복정제형은 소형 마사지기도 포함 [S12·S13·S15].</p><div class="insight" style="margin-top:16px"><b>2026년 브랜드별 안마의자 점유율: 확인 불가.</b> 2021년 바디프랜드 38%, 상위 3사 85%는 역사적 참고치입니다 [S1].</div></div></div></section>
-<section id="customer"><h2 class="section-title">03. 소비자와 품질 리스크</h2><p class="section-sub">피해구제 통계는 구매자 분포나 제품 고장률로 일반화할 수 없습니다.</p><div class="grid two"><div class="card"><h3>피해구제 중 안마의자 비중 <span>2021~2024년 1분기 [S17]</span></h3><div class="chart" id="complaints-chart"></div><p class="tiny">전체 의료용구 피해구제 1,188건 중 안마의자(렌탈 포함) 508건. 안마의자 피해구제 중 수리 후 반복하자 145건(28.5%). 판매 대비 고장률이 아닙니다.</p></div><div class="card"><h3>주요 고객 니즈 <span>정성적 세그먼트 분석</span></h3><div class="risk"><strong>시니어·중장년</strong><span class="badge">휴식 · 선물 · 체험</span></div><div class="risk"><strong>30~50대 직장인</strong><span class="badge">퇴근 후 휴식 · 추측입니다</span></div><div class="risk"><strong>1~2인 가구</strong><span class="badge">소형 · 인테리어 · 추측입니다</span></div><div class="risk"><strong>프리미엄 수요</strong><span class="badge">로보틱스 · 고급 기능</span></div><div class="risk"><strong>B2B 구매자</strong><span class="badge">휴게공간 · 기업복지</span></div><p class="tiny">연령별 실제 구매비중은 확인 불가. 한국소비자원 연령 분포는 피해구제 신청자 기준 [S17].</p></div></div></section>
-<section id="strategy"><h2 class="section-title">04. 전략 기회 및 사업 리스크</h2><p class="section-sub">전략 우선순위는 보고서의 정성적 해석이며 수익성이 입증된 투자순위가 아닙니다.</p><div class="grid three"><article class="card opportunity"><div class="rank">OPPORTUNITY 01</div><h3>소형·가구형 제품</h3><p>좁은 주거공간·디자인 적합성 강화. 기존 기업도 이미 출시 중이므로 차별화 필요.</p><div class="rating"><i class="filled"></i><i class="filled"></i><i class="filled"></i><i class="filled"></i><i></i></div><div class="tiny">정성적 검토 우선도 · 추측입니다</div></article><article class="card opportunity"><div class="rank">OPPORTUNITY 02</div><h3>B2B 공유·휴게공간</h3><p>기업복지·호텔 등 반복 사용. 설치처 확보와 가동률 및 관리원가 검증 필요.</p><div class="rating"><i class="filled"></i><i class="filled"></i><i class="filled"></i><i></i><i></i></div><div class="tiny">정성적 검토 우선도 · 추측입니다</div></article><article class="card opportunity"><div class="rank">OPPORTUNITY 03</div><h3>A/S·리퍼비시</h3><p>고장·수리·반품 문제를 서비스로 해결. 부품 접근권과 보증책임 검토 필요.</p><div class="rating"><i class="filled"></i><i class="filled"></i><i class="filled"></i><i></i><i></i></div><div class="tiny">정성적 검토 우선도 · 추측입니다</div></article></div><div class="grid two" style="margin-top:16px"><div class="card"><h3>핵심 사업 리스크</h3><div class="risk"><strong>내수 시장 정체</strong><em>높음</em></div><div class="risk"><strong>품질·A/S·반복하자</strong><em>높음</em></div><div class="risk"><strong>렌탈채권·현금회수</strong><em>높음</em></div><div class="risk"><strong>환율·OEM 원가</strong><em>높음</em></div><div class="risk"><strong>표시광고·의료효능 주장</strong><em>높음</em></div><div class="risk"><strong>신규 경쟁 진입</strong><em class="mid">중~높음</em></div><div class="risk"><strong>기술 차별화 지속성</strong><em class="mid">중간 · 추측</em></div></div><div class="card"><h3>실행 전 확인할 KPI</h3><p class="narrative">신규 제품 / B2B 서비스의 유상 파일럿(보고서 권고: 3~6개월)에서 다음 항목을 점검합니다.</p><div class="risk"><strong>고객획득비용 CAC</strong><span class="badge">판매·마케팅 효율</span></div><div class="risk"><strong>전환율·반품률</strong><span class="badge">실수요 검증</span></div><div class="risk"><strong>A/S 건당 원가</strong><span class="badge">유지관리 비용</span></div><div class="risk"><strong>렌탈 해지·연체율</strong><span class="badge">현금회수 위험</span></div><div class="risk"><strong>제품별 공헌이익</strong><span class="badge">단위경제성</span></div><p class="tiny">규제 검토: 전기안전·전자파 적합성평가, 의료기기 해당 여부, 효능 광고 실증 [S1·S27·S30].</p></div></div></section>
-<section id="confidence"><h2 class="section-title">05. 데이터 신뢰도 점검</h2><p class="section-sub">아래 %는 진실 확률이 아닌 <b>정성적 근거 신뢰도</b>입니다. 출처 40% + 교차검증 25% + 최신성 20% + 정의 명확성 15% [보고서 평가].</p><div class="grid two"><div class="card"><h3>항목별 근거 신뢰도</h3><div id="confidence-bars"></div><p class="tiny">세부 점수는 평가자의 정성 판단이 포함된 지수이며, 정확도 인증이 아닙니다.</p></div><div class="card"><h3>의사결정 시 주의사항</h3><div class="risk"><strong>규제·인증</strong><span style="color:var(--green)">95% · 근거 양호</span></div><div class="risk"><strong>경쟁사 재무실적</strong><span style="color:var(--green)">93% · 근거 양호</span></div><div class="risk"><strong>소비자 세그먼트</strong><span class="warn">78% · 대표성 제한</span></div><div class="risk"><strong>2026 브랜드별 점유율</strong><span style="color:var(--red)">67% · 공식 최신값 없음</span></div><div class="risk"><strong>신규 진입·TAM/SAM/SOM</strong><span style="color:var(--red)">66% · 임의 가정</span></div><div class="insight"><b>핵심 데이터 공백</b><br>2024~2026년 브랜드별 출하량, 안마의자 단독 매출, 가격별 판매량, 렌탈 신규·해지 계정, 실제 A/S 원가 [보고서 결론].</div></div></div></section>
-<section id="sources"><h2 class="section-title">06. 주요 근거·원문</h2><p class="section-sub">업로드된 보고서의 S번호와 원문 링크를 연결했습니다. 본 대시보드는 별도의 실시간 자료 검증을 수행하지 않았습니다.</p><div class="source-list" id="source-list"></div></section><footer class="footer">© 2026 WELLNESS / DATA · 근거: 첨부 「2026년 11월 기준 국내 중심 안마의자 시장 심층 조사」. 이 대시보드는 자료의 시각적 재구성이며, 투자 권유 또는 공식 산업통계가 아닙니다. 인쇄 버튼으로 PDF 저장 가능.</footer></main></div>
+@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}}
+html{scroll-behavior:smooth;scroll-padding-top:130px;}
+.no-scrollbar::-webkit-scrollbar{display:none;}
+.live-dot{animation:pulse 1.6s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.8)}}
+.flash{animation:flash 1.2s ease-out;}
+@keyframes flash{0%{background:#dbe1ff}100%{background:transparent}}
+.bar-anim{transition:width .7s cubic-bezier(.2,.8,.2,1);}
+.donut-seg{transition:stroke-dasharray .7s ease, stroke-dashoffset .7s ease;}
+.skeleton{background:linear-gradient(90deg,#eceef0 25%,#f7f9fb 50%,#eceef0 75%);background-size:200% 100%;animation:sk 1.2s infinite;}
+@keyframes sk{0%{background-position:200% 0}100%{background-position:-200% 0}}
+th[data-sort]{cursor:pointer;user-select:none;}
+th[data-sort]:hover{color:#0051d5;}
+@media print{aside,header,.no-print{display:none!important;}.print-pl0{padding-left:0!important;}main{padding-top:0!important;}}
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary":"#ffffff","on-secondary-container":"#fefcff","tertiary":"#000000","error-container":"#ffdad6","on-tertiary":"#ffffff","inverse-primary":"#bec6e0","on-primary-fixed":"#131b2e","on-secondary-fixed":"#00174b","tertiary-fixed":"#89f5e7","surface-tint":"#565e74","inverse-on-surface":"#eff1f3","inverse-surface":"#2d3133","on-primary-fixed-variant":"#3f465c","surface-container-highest":"#e0e3e5","outline":"#76777d","on-tertiary-fixed-variant":"#005049","outline-variant":"#c6c6cd","background":"#f7f9fb","on-surface-variant":"#45464d","on-error-container":"#93000a","surface-dim":"#d8dadc","primary-fixed-dim":"#bec6e0","surface-container-low":"#f2f4f6","on-tertiary-fixed":"#00201d","primary-fixed":"#dae2fd","on-background":"#191c1e","surface-container-high":"#e6e8ea","secondary-fixed":"#dbe1ff","on-primary-container":"#7c839b","error":"#ba1a1a","surface-bright":"#f7f9fb","surface-container-lowest":"#ffffff","secondary-container":"#316bf3","on-tertiary-container":"#0c9488","surface-variant":"#e0e3e5","on-surface":"#191c1e","on-error":"#ffffff","surface-container":"#eceef0","on-secondary":"#ffffff","on-secondary-fixed-variant":"#003ea8","tertiary-fixed-dim":"#6bd8cb","primary-container":"#131b2e","primary":"#000000","tertiary-container":"#00201d","secondary-fixed-dim":"#b4c5ff","surface-container-low":"#f2f4f6","surface":"#f7f9fb","secondary":"#0051d5"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"1.25rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","space-xs":"0.25rem","space-md":"1rem","margin":"2rem","space-2xl":"3rem","space-xl":"2rem","margin-mobile":"1rem","space-lg":"1.5rem"},"fontFamily":{"display-lg":["Public Sans","Noto Sans KR"],"label-lg":["Public Sans","Noto Sans KR"],"headline-md":["Public Sans","Noto Sans KR"],"body-lg":["Noto Sans KR"],"body-md":["Noto Sans KR"],"label-md":["Public Sans","Noto Sans KR"],"body-sm":["Noto Sans KR"],"data-kpi":["JetBrains Mono","Noto Sans KR"],"label-sm":["Public Sans","Noto Sans KR"],"data-table":["JetBrains Mono","Noto Sans KR"],"headline-lg":["Public Sans","Noto Sans KR"],"headline-sm":["Public Sans","Noto Sans KR"]},"fontSize":{"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"data-kpi":["28px",{"lineHeight":"32px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"data-table":["13px",{"lineHeight":"18px","fontWeight":"500"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}]}}}}</script>
+</head>
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased">
+
+<!-- ===== Sidebar ===== -->
+<aside class="hidden lg:flex fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+  <div class="flex flex-col">
+    <div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-low">
+      <div class="w-2.5 h-2.5 rounded-full bg-secondary live-dot"></div>
+      <div class="flex flex-col">
+        <span class="font-label-lg text-label-lg text-on-surface tracking-wide">안산시 행정망</span>
+        <span class="font-data-table text-label-sm text-on-surface-variant">ANSAN DATA HUB · LIVE</span>
+      </div>
+    </div>
+    <div class="p-space-md">
+      <div class="px-space-sm py-space-xs mb-space-sm font-label-sm text-label-sm text-outline uppercase">행정구역 탐색기</div>
+      <div class="relative mb-space-md">
+        <input id="searchInput" class="w-full h-9 pl-8 pr-space-sm bg-surface-container text-on-surface placeholder:text-outline text-body-sm font-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary" placeholder="행정동 바로 검색..." type="text"/>
+        <span class="material-symbols-outlined absolute left-2 top-2 text-[18px] text-outline">search</span>
+      </div>
+      <nav class="flex flex-col gap-1" id="sideNav">
+        <a class="side-link flex items-center gap-space-sm px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-semibold shadow-sm" href="#sec-kpi"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-label-md text-label-md">종합 인구 현황</span></a>
+        <a class="side-link flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="#sec-gu"><span class="material-symbols-outlined text-[20px]">compare_arrows</span><span class="font-label-md text-label-md">구별 비교</span></a>
+        <a class="side-link flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="#sec-rank"><span class="material-symbols-outlined text-[20px]">map</span><span class="font-label-md text-label-md">동별 상세 비교</span></a>
+        <a class="side-link flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="#sec-foreign"><span class="material-symbols-outlined text-[20px]">public</span><span class="font-label-md text-label-md">내·외국인 분석</span></a>
+        <a class="side-link flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="#sec-gender"><span class="material-symbols-outlined text-[20px]">wc</span><span class="font-label-md text-label-md">성비 인포그래픽</span></a>
+        <a class="side-link flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="#sec-table"><span class="material-symbols-outlined text-[20px]">table_chart</span><span class="font-label-md text-label-md">통계표 원장</span></a>
+      </nav>
+    </div>
+  </div>
+  <div class="p-space-md">
+    <div class="p-space-sm bg-surface-container-low rounded-lg">
+      <div class="flex items-center justify-between mb-space-xs">
+        <span class="font-label-sm text-label-sm text-on-surface-variant" id="sideCount">행정동 —</span>
+        <span class="font-data-table text-data-table font-bold" id="sideStatus">연결 중</span>
+      </div>
+      <div class="text-body-sm font-body-sm text-on-surface-variant" id="sideInfo">구글 시트 CSV 실시간 연동</div>
+    </div>
+  </div>
+</aside>
+
+<div class="lg:pl-64 print-pl0">
+<!-- ===== Header ===== -->
+<header class="fixed top-0 left-0 lg:left-64 right-0 z-40 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+  <div class="min-h-16 w-full px-margin-mobile md:px-space-xl py-2 flex flex-wrap items-center justify-between gap-space-sm">
+    <div class="flex items-center gap-space-md min-w-0">
+      <div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">monitoring</span></div>
+      <div class="flex flex-col min-w-0">
+        <h1 class="font-headline-sm text-headline-sm text-on-surface leading-tight truncate">안산시 인구 데이터 실시간 인포그래픽 포털</h1>
+        <div class="flex items-center gap-space-xs">
+          <span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary live-dot" id="liveDot"></span>
+          <span class="font-label-sm text-label-sm text-outline truncate" id="liveText">데이터 연결 중…</span>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center gap-space-sm no-print">
+      <div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-1.5 rounded-lg">
+        <span class="material-symbols-outlined text-[18px] text-outline">calendar_today</span>
+        <span class="font-label-sm text-label-sm text-outline">기준일자</span>
+        <span class="font-data-table text-data-table font-semibold text-on-surface" id="baseDate">—</span>
+      </div>
+      <div class="relative flex items-center">
+        <select id="guSelect" aria-label="구 선택" class="appearance-none bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md pl-space-md pr-8 py-2 rounded-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-secondary"></select>
+        <span class="material-symbols-outlined pointer-events-none absolute right-2 text-outline text-[18px]">expand_more</span>
+      </div>
+      <div class="relative flex items-center">
+        <select id="intervalSelect" aria-label="자동 갱신 주기" class="appearance-none bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md pl-space-md pr-8 py-2 rounded-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-secondary">
+          <option value="30">30초마다 갱신</option>
+          <option value="60" selected>1분마다 갱신</option>
+          <option value="300">5분마다 갱신</option>
+          <option value="0">자동 갱신 끄기</option>
+        </select>
+        <span class="material-symbols-outlined pointer-events-none absolute right-2 text-outline text-[18px]">expand_more</span>
+      </div>
+      <button id="btnRefresh" class="flex items-center gap-1.5 bg-surface-container-low hover:bg-surface-container-high text-on-surface px-space-md py-2 rounded-lg font-label-md text-label-md transition-colors" type="button"><span class="material-symbols-outlined text-[18px]" id="refreshIcon">refresh</span><span>새로고침</span></button>
+      <button onclick="window.print()" class="hidden md:flex items-center gap-1.5 bg-surface-container-low hover:bg-surface-container-high text-on-surface px-space-md py-2 rounded-lg font-label-md text-label-md transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">print</span><span>인쇄</span></button>
+      <button id="btnExportCsv" class="flex items-center gap-1.5 bg-primary hover:bg-on-primary-fixed-variant text-on-primary px-space-md py-2 rounded-lg font-label-md text-label-md transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[18px]">download</span><span>CSV 추출</span></button>
+    </div>
+  </div>
+  <nav class="w-full px-margin-mobile md:px-space-xl h-10 flex items-center gap-space-lg bg-surface-container-lowest overflow-x-auto no-scrollbar whitespace-nowrap no-print">
+    <a class="top-link font-label-md text-label-md text-secondary font-semibold py-2" href="#sec-kpi">종합 인구 현황</a>
+    <a class="top-link font-label-md text-label-md text-on-surface-variant hover:text-on-surface py-2" href="#sec-gu">구별 비교</a>
+    <a class="top-link font-label-md text-label-md text-on-surface-variant hover:text-on-surface py-2" href="#sec-rank">동별 상세 비교</a>
+    <a class="top-link font-label-md text-label-md text-on-surface-variant hover:text-on-surface py-2" href="#sec-foreign">내·외국인 분석</a>
+    <a class="top-link font-label-md text-label-md text-on-surface-variant hover:text-on-surface py-2" href="#sec-gender">성비 인포그래픽</a>
+    <a class="top-link font-label-md text-label-md text-on-surface-variant hover:text-on-surface py-2" href="#sec-table">통계표 원장</a>
+  </nav>
+</header>
+
+<main class="w-full pt-[150px] md:pt-[124px] bg-background px-margin-mobile md:px-space-xl pb-space-2xl">
+<div class="flex flex-col w-full gap-space-lg">
+
+  <!-- Error banner -->
+  <div id="errorBanner" class="hidden p-space-md rounded-xl bg-error-container text-on-error-container flex items-start gap-2">
+    <span class="material-symbols-outlined text-[20px]">error</span><span id="errorText" class="text-body-sm"></span>
+  </div>
+
+  <!-- Executive Control Bar -->
+  <div class="flex flex-wrap items-center justify-between gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+    <div class="flex flex-col gap-space-xs min-w-0">
+      <div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant flex-wrap">
+        <span>경기도</span><span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+        <span>안산시</span><span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+        <span id="crumbGu">전체</span><span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+        <span class="text-secondary font-semibold" id="crumbTitle">행정동 인구통계 심층지표</span>
+      </div>
+      <div class="flex items-center gap-space-sm flex-wrap">
+        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+          <span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary live-dot"></span>
+          <span id="chipText">데이터 불러오는 중</span>
+        </span>
+        <span class="font-label-sm text-label-sm text-outline" id="countdownText"></span>
+      </div>
+    </div>
+    <div class="flex items-center gap-2 min-w-0 w-full">
+      <div class="flex items-center bg-surface-container-low p-1 rounded-lg overflow-x-auto no-scrollbar max-w-full" id="dongFilterGroup"></div>
+    </div>
+  </div>
+
+  <!-- KPI Cards -->
+  <div id="sec-kpi" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-gutter"></div>
+
+  <!-- Main grid -->
+  <div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter items-start">
+    <!-- LEFT 7 -->
+    <div class="xl:col-span-7 flex flex-col gap-space-lg min-w-0">
+
+      <!-- Gu comparison -->
+      <div id="sec-gu" class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+        <div class="flex flex-wrap items-center justify-between gap-space-sm">
+          <div class="flex items-center gap-space-sm">
+            <span class="material-symbols-outlined text-secondary text-[24px]">compare_arrows</span>
+            <div>
+              <h2 class="font-headline-sm text-headline-sm text-on-surface">구별 인구 규모 및 외국인 구성 비교</h2>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">막대를 누르면 해당 구로 범위가 바뀝니다</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-space-md text-label-sm font-label-sm">
+            <span class="flex items-center gap-1.5 text-on-surface"><span class="w-3 h-3 rounded-sm bg-primary"></span> 내국인</span>
+            <span class="flex items-center gap-1.5 text-secondary"><span class="w-3 h-3 rounded-sm bg-secondary-container"></span> 외국인</span>
+          </div>
+        </div>
+        <div id="guCompare" class="flex flex-col gap-space-md"></div>
+      </div>
+
+      <!-- Ranking -->
+      <div id="sec-rank" class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+        <div class="flex flex-wrap items-center justify-between gap-space-sm">
+          <div class="flex items-center gap-space-sm">
+            <span class="material-symbols-outlined text-secondary text-[24px]">leaderboard</span>
+            <div>
+              <h2 class="font-headline-sm text-headline-sm text-on-surface">행정동별 인구 순위 및 내·외국인 복합 스케일</h2>
+              <p class="font-body-sm text-body-sm text-on-surface-variant" id="rankSub">막대 길이는 1위 동 대비 인구 규모</p>
+            </div>
+          </div>
+          <div class="flex items-center bg-surface-container-low p-1 rounded-lg" id="rankSortGroup">
+            <button class="rank-sort px-3 py-1 text-label-sm font-label-sm rounded-lg bg-primary text-on-primary shadow-sm" data-key="total" type="button">총인구순</button>
+            <button class="rank-sort px-3 py-1 text-label-sm font-label-sm rounded-lg text-on-surface-variant hover:text-on-surface" data-key="fr" type="button">외국인수순</button>
+            <button class="rank-sort px-3 py-1 text-label-sm font-label-sm rounded-lg text-on-surface-variant hover:text-on-surface" data-key="frRate" type="button">외국인비중순</button>
+          </div>
+        </div>
+        <div id="rankList" class="flex flex-col gap-space-sm"></div>
+      </div>
+
+      <!-- Table -->
+      <div id="sec-table" class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+        <div class="flex items-center justify-between gap-space-sm flex-wrap">
+          <div class="flex items-center gap-space-sm">
+            <span class="material-symbols-outlined text-secondary text-[22px]">table_chart</span>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">행정동별 주민등록 및 외국인 성별 교차 명부 원장</h3>
+          </div>
+          <span class="font-label-sm text-label-sm text-outline">단위: 명, % · 머리글을 누르면 정렬</span>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse min-w-[720px]" id="demographicTable">
+            <thead>
+              <tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+                <th class="py-2.5 px-3 rounded-l" data-sort="name">행정동</th>
+                <th class="py-2.5 px-3 text-right" data-sort="total">총인구</th>
+                <th class="py-2.5 px-3 text-right" data-sort="korM">내국인(남)</th>
+                <th class="py-2.5 px-3 text-right" data-sort="korF">내국인(여)</th>
+                <th class="py-2.5 px-3 text-right" data-sort="frM">외국인(남)</th>
+                <th class="py-2.5 px-3 text-right" data-sort="frF">외국인(여)</th>
+                <th class="py-2.5 px-3 text-right" data-sort="frRate">외국인 비중</th>
+                <th class="py-2.5 px-3 text-right rounded-r" data-sort="korSR">내국 성비</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody" class="text-body-sm font-body-sm"></tbody>
+            <tfoot id="tableFoot"></tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT 5 -->
+    <div class="xl:col-span-5 flex flex-col gap-space-lg min-w-0">
+
+      <!-- Donut composition -->
+      <div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+        <div class="flex items-center gap-space-sm">
+          <span class="material-symbols-outlined text-secondary text-[24px]">donut_large</span>
+          <div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">인구 구성 도넛</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant" id="donutSub">내·외국인 × 성별 4분할</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center gap-space-lg">
+          <div class="relative w-44 h-44 shrink-0">
+            <svg viewBox="0 0 120 120" class="w-full h-full -rotate-90" id="donutSvg"></svg>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+              <span class="font-label-sm text-label-sm text-outline" id="donutLabel">총 인구</span>
+              <span class="font-data-table text-headline-sm font-bold text-on-surface" id="donutTotal">—</span>
+              <span class="font-label-sm text-label-sm text-secondary" id="donutFr"></span>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 w-full" id="donutLegend"></div>
+        </div>
+      </div>
+
+      <!-- Gender paradox -->
+      <div id="sec-gender" class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+        <div class="flex items-center gap-space-sm">
+          <span class="material-symbols-outlined text-secondary text-[24px]">wc</span>
+          <div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">내·외국인 성별 구성 대비</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant" id="genderSub"></p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md" id="genderBlocks"></div>
+        <div class="p-space-sm rounded-lg bg-surface-container-high/40 text-body-sm font-body-sm text-on-surface-variant flex items-start gap-2">
+          <span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">info</span>
+          <span id="genderNote"></span>
+        </div>
+      </div>
+
+      <!-- Sex ratio dot plot -->
+      <div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+        <div class="flex flex-wrap items-center justify-between gap-space-sm">
+          <div class="flex items-center gap-space-sm">
+            <span class="material-symbols-outlined text-secondary text-[24px]">scatter_plot</span>
+            <div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">동별 성비 분포 (여 100 기준)</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">가운데 선(100)보다 오른쪽이면 남성이 많음</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-space-md text-label-sm font-label-sm">
+            <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-primary"></span>내국인</span>
+            <span class="flex items-center gap-1.5 text-secondary"><span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>외국인</span>
+          </div>
+        </div>
+        <div id="sexRatioPlot"></div>
+      </div>
+
+      <!-- Foreign density -->
+      <div id="sec-foreign" class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+        <div class="flex items-center gap-space-sm">
+          <span class="material-symbols-outlined text-secondary text-[24px]">pie_chart</span>
+          <div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">동별 외국인 비율 분포 밀도</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">다문화 밀집도 스펙트럼 (비율 높은 순)</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-space-sm" id="densityList"></div>
+      </div>
+
+      <!-- Insights -->
+      <div class="p-space-lg rounded-xl bg-primary text-on-primary flex flex-col gap-space-md shadow-md">
+        <div class="flex items-center gap-space-sm">
+          <span class="material-symbols-outlined text-secondary-fixed text-[24px]">insights</span>
+          <h3 class="font-headline-sm text-headline-sm text-on-primary">자동 도출 시사점 (Key Takeaways)</h3>
+        </div>
+        <ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-surface-dim" id="insightList"></ul>
+        <div class="pt-space-xs flex justify-between items-center text-label-sm font-label-sm text-outline-variant">
+          <span>데이터 출처: 구글 시트 공개 CSV</span>
+          <span class="font-data-table" id="insightTime"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+</div>
+
+<!-- Toast -->
+<div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[60] hidden px-space-md py-2 rounded-lg bg-inverse-surface text-inverse-on-surface text-body-sm shadow-lg flex items-center gap-2 no-print">
+  <span class="material-symbols-outlined text-[18px]">sync</span><span id="toastText"></span>
+</div>
+
 <script>
-const $=id=>document.getElementById(id);const fmt=n=>Number(n).toLocaleString('ko-KR');const colors={cyan:'#38d7d1',blue:'#729aff',gold:'#f3be6b',purple:'#bd9cff'};
-function chartSVG(id,labels,datasets,opts={}){let w=620,h=275,p={l:48,r:15,t:20,b:37},W=w-p.l-p.r,H=h-p.t-p.b,max=opts.max||Math.ceil(Math.max(...datasets.flatMap(d=>d.values))*1.17/1000)*1000;let s=`<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${opts.label||'시장 데이터 차트'}">`;for(let i=0;i<=4;i++){let y=p.t+H*i/4,v=max*(4-i)/4;s+=`<line x1="${p.l}" y1="${y}" x2="${w-p.r}" y2="${y}" stroke="#2b3f59" stroke-dasharray="3 5"/><text x="${p.l-8}" y="${y+4}" fill="#92a7c4" text-anchor="end" font-size="11">${opts.axisFormat?opts.axisFormat(v):fmt(Math.round(v))}</text>`}labels.forEach((lab,i)=>{let x=p.l+W*(i+.5)/labels.length;s+=`<text x="${x}" y="${h-12}" fill="#9bb0cb" text-anchor="middle" font-size="12">${lab}</text>`});if(opts.type==='line'){datasets.forEach(d=>{let pts=d.values.map((v,i)=>[p.l+W*(i+.5)/labels.length,p.t+H*(1-v/max)]);s+=`<polyline points="${pts.map(x=>x.join(',')).join(' ')}" fill="none" stroke="${d.color}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>`;pts.forEach(([x,y],i)=>s+=`<circle cx="${x}" cy="${y}" r="5" fill="${d.color}" stroke="#142238" stroke-width="2"><title>${d.name}: ${labels[i]}년 ${fmt(d.values[i])}억 원</title></circle>`)})}else{let group=W/labels.length;datasets.forEach((d,j)=>d.values.forEach((v,i)=>{let bw=Math.min(52,group*.65/datasets.length),x=p.l+group*i+group/2+(j-(datasets.length-1)/2)*bw-bw/2,y=p.t+H*(1-v/max);s+=`<rect x="${x}" y="${y}" width="${bw}" height="${p.t+H-y}" rx="4" fill="${d.color}" opacity=".92"><title>${labels[i]}: ${fmt(v)} ${opts.unit||'억'}</title></rect><text x="${x+bw/2}" y="${y-7}" fill="#d9e8f8" text-anchor="middle" font-size="11">${opts.dataFormat?opts.dataFormat(v):fmt(v)}</text>`}))}s+='</svg>';$(id).innerHTML=s}
-chartSVG('domestic-chart',['2007','2012','2013','2015','2021'],[{name:'국내',values:[250,1200,2000,3500,15000],color:colors.cyan}],{max:16000,label:'국내 안마의자 시장 규모, 2007~2021',unit:'억 원'});chartSVG('global-chart',['2025','2026','2030'],[{name:'글로벌',values:[48.2,52.7,75.1],color:colors.blue}],{max:85,axisFormat:v=>v.toFixed(0),dataFormat:v=>v.toFixed(1),unit:'억 달러',label:'글로벌 안마의자 시장 규모 전망'});
-const comp={body:{name:'바디프랜드',values:[6110,5437,4197,4369,4226],color:colors.cyan},ceragem:{name:'세라젬',values:[6671,7502,5847,5460,5498],color:colors.gold}};function updateCompany(){let chosen=[...document.querySelectorAll('[data-series].on')].map(b=>comp[b.dataset.series]);chartSVG('company-chart',['2021','2022','2023','2024','2025'],chosen.length?chosen:[{name:'선택 없음',values:[0,0,0,0,0],color:'#26354b'}],{type:'line',max:8000,label:'회사별 연간 연결 매출 추이'})}document.querySelectorAll('[data-series]').forEach(b=>b.addEventListener('click',()=>{b.classList.toggle('on');updateCompany()}));updateCompany();
-$('complaints-chart').innerHTML=`<div style="display:flex;justify-content:center;align-items:center;min-height:240px;gap:30px;flex-wrap:wrap"><div style="width:185px;height:185px;border-radius:50%;background:conic-gradient(${colors.cyan} 0 42.76%,#2c3d53 42.76% 100%);display:grid;place-items:center"><div style="background:#142238;width:130px;height:130px;border-radius:50%;display:grid;place-content:center;text-align:center"><b style="font-size:30px">42.8%</b><small class="muted">508 / 1,188건</small></div></div><div><div><i class="dot" style="background:${colors.cyan}"></i>안마의자 508건</div><div><i class="dot" style="background:#2c3d53"></i>기타 의료용구 680건</div><div style="margin-top:16px;color:var(--gold)">반복하자 145건<br><small>안마의자 피해구제 중 28.5%</small></div></div></div>`;
-function calc(){let r=+$('cagr').value;let v=1.3*Math.pow(1+r/100,5);$('cagr-val').textContent=(r>=0?'+':'')+r.toFixed(1)+'%';$('scenario-value').textContent=v.toFixed(2)+'조 원';$('scenario-tag').textContent=r===-2?'하방 시나리오':r===1?'기준 시나리오':r===4?'상방 시나리오':'사용자 정의 가정'}$('cagr').addEventListener('input',calc);calc();
-const scores=[['국내 과거 시장',88],['글로벌 전망',83.3],['경쟁사 실적',93],['최신 점유율',67],['고객·유통 채널',78],['제품·기술',87.8],['렌탈 수익구조',82],['규제·인증',95],['SWOT·PEST',75],['신규사업 TAM/SOM',66]];$('confidence-bars').innerHTML=scores.map(([n,v])=>`<div class="hbar"><span style="font-size:11px">${n}</span><div class="track"><div class="fill" style="width:${v}%;background:${v>=80?colors.cyan:v>=70?colors.gold:'#ff858a'}"></div></div><div class="val">${v}%</div></div>`).join('');
-const sources=[['S1','공정위 / 시장 추이·표시광고','https://case.ftc.go.kr/com/dscv/dscvHtmlView.do?docCnvrMnNo=14546&docId=20250403142110087203'],['S2','MTN / 국내 2025 시장 추정','https://news.mtn.co.kr/news-detail/2025011716420085307'],['S3','세라젬 인용 업계 시장추정','https://v.daum.net/v/20261002155012418'],['S4','The Business Research Company / 글로벌','https://www.thebusinessresearchcompany.com/report/massage-chair-global-market-report'],['S5','Grand View Research / 마사지 장비','https://www.grandviewresearch.com/industry-analysis/massage-equipment-market'],['S8','세라젬 실적 관련 보도','https://v.daum.net/v/20260529145534008'],['S12','세라젬 공식 뉴스룸 / 2025 실적','https://www.ceragem.co.kr/pr/press-view.asp?seq=800'],['S13','코웨이 공식 / 2025 실적','https://company.coway.com/ko/newsroom/press/911'],['S15','코지마 2025 실적 보도','https://www.topdaily.kr/articles/110560?ref_sec=a_rn'],['S16','바디프랜드 매출 추이 보도','https://www.news2day.co.kr/article/20260814500248'],['S17','한국소비자원 / 의료용구 피해구제','https://www.kca.go.kr/home/sub.do?menukey=4005&mode=view&no=1003709450&page=2'],['S27','식약처 / 웰니스·의료기기 구분','https://www.mfds.go.kr/law/board/boardDetail.do?brdId=data0010&menuKey=37&seq=15229'],['S30','국립전파연구원 / 적합성평가','https://www.rra.go.kr/ko/license/qnaList_view.do?cpage=51&nb_type=0&req_seq=139&searchCon=&searchTxt=&sortOrder=']];$('source-list').innerHTML=sources.map(([n,label,url])=>`<a href="${url}" target="_blank" rel="noopener noreferrer"><strong style="color:var(--cyan)">${n}</strong>　${label} ↗</a>`).join('');
-document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{document.querySelectorAll('.nav a').forEach(n=>n.classList.remove('active'));a.classList.add('active')}));$('download').addEventListener('click',()=>{let blob=new Blob(['<!doctype html>\n'+document.documentElement.outerHTML],{type:'text/html;charset=utf-8'});let u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='massage_chair_market_dashboard.html';a.click();setTimeout(()=>URL.revokeObjectURL(u),1500)});
-</script></body></html>
+(function () {
+  'use strict';
+  const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTd2yI5K1BZssUjV3CdIeODsVuqsX5z7I99qXq9aE-9jS_H8tDiOBHz1JT0mGRVk_XDfkMqr5qLtx0J/pub?output=csv';
+  const CACHE_KEY = 'ansanDashboard.lastCsv';
+  // 연결 실패 시 쓰는 내장 스냅샷 (2026-11-12 수신본)
+  const FALLBACK_CSV = `시군구,행정동명,인구 전체,내국인 전체,내국인 남자,내국인 여자,외국인 전체,외국인 남자,외국인 여자,데이터기준일자
+안산시 상록구,일     동,23533,22225,11382,10843,1308,594,714,2026-02-20
+안산시 상록구,이     동,24897,22151,12080,10071,2746,1348,1398,2026-02-20
+안산시 상록구,사     동,31790,28783,15192,13591,3007,1449,1558,2026-02-20
+안산시 상록구,사 이 동,30431,29690,15017,14673,741,337,404,2026-02-20
+안산시 상록구,해 양 동,42116,39189,19626,19563,2927,1420,1507,2026-02-20
+안산시 상록구,본오1동,35819,34054,17674,16380,1765,910,855,2026-02-20
+안산시 상록구,본오2동,24780,23825,11756,12069,955,491,464,2026-02-20
+안산시 상록구,본오3동,18798,17776,8870,8906,1022,534,488,2026-02-20
+안산시 상록구,부 곡 동,20329,19794,10200,9594,535,237,298,2026-02-20
+안산시 상록구,월 피 동,35597,34842,17834,17008,755,347,408,2026-02-20
+안산시 상록구,성 포 동,24324,24159,11787,12372,165,53,112,2026-02-20
+안산시 상록구,반 월 동,18063,17767,8945,8822,296,178,118,2026-02-20
+안산시 상록구,안 산 동,8260,8074,4263,3811,186,131,55,2026-02-20
+안산시 단원구,와     동,37197,34997,18683,16314,2200,1087,1113,2026-02-20
+안산시 단원구,고 잔 동,20189,19497,9700,9797,692,322,370,2026-02-20
+안산시 단원구,중 앙 동,23915,23433,11648,11785,482,195,287,2026-02-20
+안산시 단원구,호 수 동,42114,41754,21036,20718,360,193,167,2026-02-20
+안산시 단원구,원 곡 동,19206,5354,3019,2335,13852,7906,5946,2026-02-20
+안산시 단원구,백 운 동,27462,23753,11887,11866,3709,2001,1708,2026-02-20
+안산시 단원구,신 길 동,23584,20384,10902,9482,3200,1879,1321,2026-02-20
+안산시 단원구,초 지 동,50865,45952,23510,22442,4913,4079,834,2026-02-20
+안산시 단원구,선부 1동,17986,16623,8430,8193,1363,740,623,2026-02-20
+안산시 단원구,선부 2동,22125,17046,9052,7994,5079,2752,2327,2026-02-20
+안산시 단원구,선부 3동,33686,31616,16258,15358,2070,1086,984,2026-02-20
+안산시 단원구,대 부 동,9355,9122,4719,4403,233,181,52,2026-02-20
+안산시 단원구,백 운 동,27462,23753,11887,11866,3709,2001,1708,2026-02-20
+안산시 단원구,신 길 동,23584,20384,10902,9482,3200,1879,1321,2026-02-20
+안산시 단원구,초 지 동,50865,45952,23510,22442,4913,4079,834,2026-02-20
+안산시 단원구,선부 1동,17986,16623,8430,8193,1363,740,623,2026-02-20
+안산시 단원구,선부 2동,22125,17046,9052,7994,5079,2752,2327,2026-02-20
+안산시 단원구,선부 3동,33686,31616,16258,15358,2070,1086,984,2026-02-20
+안산시 단원구,대 부 동,9355,9122,4719,4403,233,181,52,2026-02-20`;
+
+  const state = {
+    rows: [], dupCount: 0, gu: 'all', dong: null, query: '',
+    rankSort: 'total', tableSort: { key: 'total', dir: -1 },
+    interval: 60, remaining: 60, lastFetch: null, prevMap: null, loading: false, offline: false
+  };
+
+  // ---------- helpers ----------
+  const $ = id => document.getElementById(id);
+  const fmt = n => Math.round(n).toLocaleString('ko-KR');
+  const pct = (a, b, d = 2) => b ? (a / b * 100).toFixed(d) : '0.00';
+  const ratio = (m, f) => f ? m / f * 100 : 0;
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const guLabel = g => g === 'all' ? '안산시 전체' : g;
+  const keyOf = r => r.guShort + '|' + r.name;
+
+  function parseCSV(text) {
+    const out = []; let row = [], field = '', q = false;
+    for (let i = 0; i < text.length; i++) {
+      const c = text[i];
+      if (q) {
+        if (c === '"') { if (text[i + 1] === '"') { field += '"'; i++; } else q = false; }
+        else field += c;
+      } else if (c === '"') q = true;
+      else if (c === ',') { row.push(field); field = ''; }
+      else if (c === '\n') { row.push(field); out.push(row); row = []; field = ''; }
+      else if (c !== '\r') field += c;
+    }
+    if (field !== '' || row.length) { row.push(field); out.push(row); }
+    return out;
+  }
+
+  function normalize(table) {
+    const head = table[0].map(h => h.replace(/^﻿/, '').replace(/\s+/g, ''));
+    const col = name => head.indexOf(name);
+    const C = {
+      gu: col('시군구'), name: col('행정동명'), total: col('인구전체'), kor: col('내국인전체'),
+      korM: col('내국인남자'), korF: col('내국인여자'), fr: col('외국인전체'),
+      frM: col('외국인남자'), frF: col('외국인여자'), date: col('데이터기준일자')
+    };
+    if (C.gu < 0 || C.name < 0 || C.total < 0) throw new Error('CSV 머리글 형식이 예상과 다릅니다: ' + head.join(', '));
+    const num = v => Number(String(v ?? '').replace(/[^\d.-]/g, '')) || 0;
+    const seen = new Map(); let dup = 0;
+    table.slice(1).forEach(r => {
+      if (!r[C.name] || !r[C.name].trim()) return;
+      const gu = r[C.gu].trim();
+      const o = {
+        gu, guShort: gu.split(/\s+/).pop(), name: r[C.name].replace(/\s+/g, ''),
+        total: num(r[C.total]), kor: num(r[C.kor]), korM: num(r[C.korM]), korF: num(r[C.korF]),
+        fr: num(r[C.fr]), frM: num(r[C.frM]), frF: num(r[C.frF]), date: (r[C.date] || '').trim()
+      };
+      o.frRate = o.total ? o.fr / o.total * 100 : 0;
+      o.korSR = ratio(o.korM, o.korF);
+      o.frSR = ratio(o.frM, o.frF);
+      const k = keyOf(o);
+      if (seen.has(k)) { dup++; return; }
+      seen.set(k, o);
+    });
+    return { rows: [...seen.values()], dup };
+  }
+
+  function sum(rows) {
+    const a = { total: 0, kor: 0, korM: 0, korF: 0, fr: 0, frM: 0, frF: 0 };
+    rows.forEach(r => { for (const k in a) a[k] += r[k]; });
+    a.frRate = a.total ? a.fr / a.total * 100 : 0;
+    a.korSR = ratio(a.korM, a.korF); a.frSR = ratio(a.frM, a.frF);
+    return a;
+  }
+
+  function animateNum(el, to) {
+    if (!el) return;
+    const from = Number(el.dataset.v || 0); el.dataset.v = to;
+    if (from === to) { el.textContent = fmt(to); return; }
+    const t0 = performance.now(), dur = 700;
+    const step = t => {
+      const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmt(from + (to - from) * e);
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+
+  function toast(msg) {
+    $('toastText').textContent = msg; const t = $('toast');
+    t.classList.remove('hidden'); clearTimeout(toast._t);
+    toast._t = setTimeout(() => t.classList.add('hidden'), 3500);
+  }
+
+  // ---------- data ----------
+  async function load(manual) {
+    if (state.loading) return;
+    state.loading = true; $('refreshIcon').classList.add('animate-spin');
+    try {
+      const res = await fetch(CSV_URL + '&_t=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const text = await res.text();
+      apply(text, false);
+      try { localStorage.setItem(CACHE_KEY, text); } catch (e) {}
+      $('errorBanner').classList.add('hidden');
+      if (manual) toast('최신 데이터를 불러왔습니다');
+    } catch (err) {
+      let cached = null; try { cached = localStorage.getItem(CACHE_KEY); } catch (e) {}
+      const isFile = location.protocol === 'file:';
+      const src = cached ? '이 브라우저에 마지막으로 저장된 데이터' : '파일에 내장된 스냅샷(2026-11-12 수신본)';
+      $('errorText').textContent = isFile
+        ? `파일을 직접 열면(file://) 구글이 보안 정책(CORS)으로 데이터 요청을 막습니다. 같은 폴더의 "대시보드_실행.bat"으로 열거나 웹 서버에 올리면 실시간 연동됩니다. 지금은 ${src}를 표시합니다.`
+        : `구글 시트에 연결하지 못했습니다 (${err.message}). ${state.rows.length ? '직전 데이터를 유지하고' : src + '를 표시하며'} 잠시 후 다시 시도합니다.`;
+      $('errorBanner').classList.remove('hidden');
+      if (!state.rows.length) apply(cached || FALLBACK_CSV, true);
+      state.offline = true; updateStatus();
+    } finally {
+      state.loading = false; $('refreshIcon').classList.remove('animate-spin');
+      state.remaining = state.interval;
+    }
+  }
+
+  function apply(text, fromCache) {
+    const { rows, dup } = normalize(parseCSV(text));
+    // change detection
+    const map = new Map(rows.map(r => [keyOf(r), r.total + '/' + r.fr]));
+    if (state.prevMap && !fromCache) {
+      let changed = 0;
+      map.forEach((v, k) => { if (state.prevMap.get(k) !== v) changed++; });
+      state.prevMap.forEach((v, k) => { if (!map.has(k)) changed++; });
+      if (changed) toast('데이터 변경 감지: ' + changed + '개 행정동 수치가 갱신되었습니다');
+    }
+    state.prevMap = map;
+    state.rows = rows; state.dupCount = dup;
+    state.lastFetch = new Date(); state.offline = fromCache;
+    if (state.gu !== 'all' && !rows.some(r => r.guShort === state.gu)) state.gu = 'all';
+    if (state.dong && !rows.some(r => keyOf(r) === state.dong)) state.dong = null;
+    buildGuSelect(); render();
+  }
+
+  // ---------- render ----------
+  function scopeRows() {
+    const q = state.query.replace(/\s+/g, '');
+    return state.rows.filter(r => (state.gu === 'all' || r.guShort === state.gu) && (!q || r.name.includes(q)));
+  }
+  const nameOf = r => state.gu === 'all' ? `${r.name}<span class="text-outline font-normal text-label-sm ml-1">${esc(r.guShort)}</span>` : esc(r.name);
+
+  function render() {
+    const set = scopeRows();
+    const sel = state.dong ? state.rows.find(r => keyOf(r) === state.dong) : null;
+    const scope = sel ? [sel] : set;
+    const agg = sum(scope), setAgg = sum(set);
+    const scopeName = sel ? sel.name : (guLabel(state.gu) + (state.query ? ` (검색: ${state.query})` : ''));
+
+    $('crumbGu').textContent = guLabel(state.gu);
+    $('crumbTitle').textContent = sel ? `${sel.name} 인구통계 상세` : `${set.length}개 행정동 인구통계 심층지표`;
+    $('baseDate').textContent = state.rows[0]?.date || '—';
+    renderPills(set); renderKPI(agg, set, setAgg, sel, scopeName); renderGu();
+    renderRank(set); renderTable(set, setAgg); renderDonut(agg, scopeName);
+    renderGender(agg, set, scopeName); renderSexRatio(set); renderDensity(set);
+    renderInsights(set, setAgg); updateStatus();
+  }
+
+  function renderPills(set) {
+    const g = $('dongFilterGroup');
+    const btn = (key, label, active) => `<button class="dong-pill shrink-0 px-3 py-1 text-label-sm font-label-sm rounded-lg whitespace-nowrap transition-all ${active ? 'bg-primary text-on-primary shadow-sm' : 'text-on-surface-variant hover:text-on-surface'}" data-key="${esc(key)}" type="button">${label}</button>`;
+    g.innerHTML = btn('', `전체보기 (${set.length}개동)`, !state.dong) +
+      [...set].sort((a, b) => b.total - a.total).map(r => btn(keyOf(r), esc(r.name), state.dong === keyOf(r))).join('');
+  }
+
+  function kpiCard({ en, ko, icon, iconCls, value, valueCls = 'text-on-surface', side = '', footL, footR, bar }) {
+    return `<div class="flex flex-col justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm relative overflow-hidden hover:shadow-md transition-shadow">
+      <div class="flex items-start justify-between">
+        <div class="flex flex-col"><span class="text-label-sm font-label-sm text-outline uppercase tracking-wider">${en}</span><span class="text-label-md font-label-md text-on-surface-variant mt-0.5">${ko}</span></div>
+        <div class="w-9 h-9 rounded-lg flex items-center justify-center ${iconCls}"><span class="material-symbols-outlined text-[22px]">${icon}</span></div>
+      </div>
+      <div class="mt-space-md flex flex-wrap items-baseline gap-x-space-sm gap-y-1">
+        <span class="font-data-kpi text-data-kpi ${valueCls} kpi-num" data-to="${value}">0</span>
+        <span class="text-body-md font-body-md text-on-surface-variant">명</span>${side}
+      </div>
+      <div class="mt-space-sm flex items-center justify-between gap-2 text-body-sm font-body-sm bg-surface-container-low/50 px-2 py-1 rounded">${footL}${footR}</div>
+      <div class="absolute bottom-0 left-0 right-0 h-1 ${bar}"></div></div>`;
+  }
+
+  function renderKPI(agg, set, setAgg, sel, scopeName) {
+    const el = $('sec-kpi');
+    const prev = [...el.querySelectorAll('.kpi-num')].map(n => n.dataset.v);
+    const sorted = [...set].sort((a, b) => b.total - a.total);
+    const top = sorted[0], second = sorted[1];
+    let foot1;
+    if (sel) {
+      const rank = [...state.rows].filter(r => r.guShort === sel.guShort).sort((a, b) => b.total - a.total).findIndex(r => r === sel) + 1;
+      foot1 = `<span class="text-on-surface-variant">${esc(sel.guShort)} 내 ${rank}위</span><span class="text-on-tertiary-container font-label-sm font-data-table">${pct(sel.total, setAgg.total, 1)}% 점유</span>`;
+    } else {
+      foot1 = top ? `<span class="text-on-surface-variant truncate">최다 밀집: ${esc(top.name)}</span><span class="inline-flex items-center text-on-tertiary-container font-label-sm font-data-table shrink-0"><span class="material-symbols-outlined text-[14px]">arrow_upward</span>${pct(top.total, setAgg.total, 1)}% 점유</span>` : '<span>—</span>';
+    }
+    const frFemale = agg.frF >= agg.frM;
+    el.innerHTML = [
+      kpiCard({ en: 'Total Population', ko: `${esc(scopeName)} 총 인구`, icon: 'groups', iconCls: 'bg-surface-container-low text-secondary', value: agg.total, footL: foot1, footR: '', bar: 'bg-gradient-to-r from-secondary to-secondary-container' }),
+      kpiCard({ en: 'Korean Residents', ko: '등록 내국인 합계', icon: 'badge', iconCls: 'bg-surface-container-low text-primary', value: agg.kor,
+        side: `<span class="ml-auto font-data-table text-data-table text-on-surface-variant font-bold">${pct(agg.kor, agg.total, 1)}%</span>`,
+        footL: `<span class="text-on-surface-variant">남 ${fmt(agg.korM)} / 여 ${fmt(agg.korF)}</span>`, footR: `<span class="font-label-sm text-label-sm text-secondary font-semibold font-data-table shrink-0">성비 ${agg.korSR.toFixed(1)}</span>`, bar: 'bg-surface-container-highest' }),
+      kpiCard({ en: 'Foreign Residents', ko: '외국인 등록 거주자', icon: 'public', iconCls: 'bg-error-container/40 text-on-error-container', value: agg.fr,
+        side: `<span class="ml-auto px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-data-table">${agg.frRate.toFixed(2)}%</span>`,
+        footL: `<span class="text-on-surface-variant">${frFemale ? `여 ${fmt(agg.frF)} &gt; 남 ${fmt(agg.frM)}` : `남 ${fmt(agg.frM)} &gt; 여 ${fmt(agg.frF)}`}</span>`,
+        footR: `<span class="font-label-sm text-label-sm ${frFemale ? 'text-on-tertiary-container' : 'text-secondary'} font-semibold shrink-0">${frFemale ? '여성우세' : '남성우세'} ${pct(Math.max(agg.frF, agg.frM), agg.fr, 1)}%</span>`, bar: 'bg-secondary-container' }),
+      kpiCard({ en: 'Top Municipality', ko: top ? `최대 행정동 (${esc(top.name)})` : '최대 행정동', icon: 'location_city', iconCls: 'bg-surface-container-low text-secondary', value: top ? top.total : 0, valueCls: 'text-secondary',
+        side: second ? `<span class="ml-auto whitespace-nowrap text-body-sm font-body-sm text-outline">${esc(second.name)} 대비 +${((top.total - second.total) / 1000).toFixed(1)}k</span>` : '',
+        footL: `<span class="text-on-surface-variant">${set.length}개동 평균 ${fmt(setAgg.total / (set.length || 1))}명</span>`, footR: top ? `<span class="font-label-sm text-label-sm text-secondary font-semibold shrink-0">내국인 ${pct(top.kor, top.total, 1)}%</span>` : '', bar: 'bg-secondary' })
+    ].join('');
+    el.querySelectorAll('.kpi-num').forEach((n, i) => { n.dataset.v = prev[i] || 0; animateNum(n, Number(n.dataset.to)); });
+  }
+
+  function renderGu() {
+    const groups = {};
+    state.rows.forEach(r => (groups[r.guShort] = groups[r.guShort] || []).push(r));
+    const list = Object.entries(groups).map(([g, rs]) => ({ g, n: rs.length, ...sum(rs) })).sort((a, b) => b.total - a.total);
+    const max = Math.max(...list.map(x => x.total), 1), all = sum(state.rows);
+    $('guCompare').innerHTML = list.map(x => {
+      const active = state.gu === x.g;
+      return `<button type="button" class="gu-bar text-left p-space-sm rounded-lg transition-colors ${active ? 'bg-secondary-fixed/50 ring-2 ring-secondary' : 'bg-surface-container-low hover:bg-surface-container'}" data-gu="${esc(x.g)}">
+        <div class="flex items-center justify-between mb-1.5 gap-2 flex-wrap">
+          <div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm">${esc(x.g)}</span><span class="px-2 py-0.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-on-surface-variant">${x.n}개동 · 시 전체의 ${pct(x.total, all.total, 1)}%</span></div>
+          <div class="flex items-baseline gap-1"><span class="font-data-table text-data-table font-bold">${fmt(x.total)}</span><span class="text-body-sm text-outline">명</span></div>
+        </div>
+        <div class="h-5 bg-surface-container-highest rounded-full overflow-hidden flex bar-anim" style="width:${(x.total / max * 100).toFixed(1)}%">
+          <div class="h-full bg-primary" style="width:${pct(x.kor, x.total)}%"></div><div class="h-full bg-secondary-container" style="width:${pct(x.fr, x.total)}%"></div>
+        </div>
+        <div class="flex justify-between mt-1 text-label-sm font-label-sm text-on-surface-variant flex-wrap gap-x-2">
+          <span>내국인 <strong class="text-on-surface font-data-table">${fmt(x.kor)}</strong> (성비 ${x.korSR.toFixed(1)})</span>
+          <span>외국인 <strong class="text-secondary font-data-table">${fmt(x.fr)}</strong> (${x.frRate.toFixed(2)}%)</span>
+        </div></button>`;
+    }).join('');
+  }
+
+  function renderRank(set) {
+    const k = state.rankSort;
+    const sorted = [...set].sort((a, b) => b[k] - a[k]);
+    const max = Math.max(...set.map(r => r.total), 1);
+    const maxFr = Math.max(...set.map(r => r.fr), 1);
+    const topFr = [...set].sort((a, b) => b.fr - a.fr)[0];
+    const topRate = [...set].sort((a, b) => b.frRate - a.frRate)[0];
+    const topKor = [...set].sort((a, b) => a.frRate - b.frRate)[0];
+    $('rankSub').textContent = k === 'total' ? '막대 길이는 1위 동 대비 인구 규모 · 누르면 해당 동 선택'
+      : k === 'fr' ? '막대 길이는 외국인 최다 동 대비 외국인 수' : '막대 길이는 1위 동 대비 인구 규모 · 외국인 비중 높은 순';
+    if (!sorted.length) { $('rankList').innerHTML = '<p class="text-body-sm text-outline p-space-md">검색 결과가 없습니다.</p>'; return; }
+    $('rankList').innerHTML = sorted.map((r, i) => {
+      const key = keyOf(r), dim = state.dong && state.dong !== key, on = state.dong === key;
+      let badge = '';
+      if (r === topFr) badge = `<span class="px-2 py-0.5 rounded bg-error-container/60 text-on-error-container font-label-sm text-label-sm font-semibold">외국인 등록 1위 (${fmt(r.fr)}명)</span>`;
+      else if (r === topRate) badge = `<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">외국인 비중 1위 (${r.frRate.toFixed(1)}%)</span>`;
+      else if (r === topKor) badge = `<span class="px-2 py-0.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-on-surface-variant">내국인 비율 최고 ${pct(r.kor, r.total, 1)}%</span>`;
+      else if (i === 0 && k === 'total') badge = `<span class="px-2 py-0.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-on-surface-variant">인구 비중 1위</span>`;
+      const outer = k === 'fr' ? r.fr / maxFr * 100 : r.total / max * 100;
+      return `<div class="dong-card cursor-pointer p-space-sm rounded-lg transition-all ${on ? 'bg-secondary-fixed/50 ring-2 ring-secondary' : 'bg-surface-container-low hover:bg-surface-container'}" style="opacity:${dim ? .35 : 1}" data-key="${esc(key)}">
+        <div class="flex items-center justify-between mb-1.5 gap-2 flex-wrap">
+          <div class="flex items-center gap-space-sm flex-wrap">
+            <span class="w-6 h-6 rounded flex items-center justify-center ${i === 0 ? 'bg-secondary text-on-secondary' : 'bg-surface-container-highest text-on-surface'} font-label-sm text-label-sm font-bold">${i + 1}</span>
+            <span class="font-headline-sm text-headline-sm text-on-surface">${nameOf(r)}</span>${badge}
+          </div>
+          <div class="flex items-baseline gap-1"><span class="font-data-table text-data-table font-bold">${fmt(k === 'fr' ? r.fr : r.total)}</span><span class="text-body-sm text-outline">명${k === 'fr' ? ' (외국인)' : ''}</span></div>
+        </div>
+        <div class="h-4 bg-surface-container-highest rounded-full overflow-hidden flex bar-anim" style="width:${Math.max(outer, 2).toFixed(1)}%">
+          ${k === 'fr' ? `<div class="h-full bg-secondary-container" style="width:100%"></div>` :
+          `<div class="h-full bg-primary" style="width:${pct(r.kor, r.total)}%"></div><div class="h-full bg-secondary-container" style="width:${pct(r.fr, r.total)}%"></div>`}
+        </div>
+        <div class="flex justify-between items-center mt-1 text-label-sm font-label-sm text-on-surface-variant flex-wrap gap-x-2">
+          <span>내국인 <strong class="text-on-surface font-data-table">${fmt(r.kor)}명</strong> (남 ${fmt(r.korM)} / 여 ${fmt(r.korF)})</span>
+          <span>외국인 <strong class="text-secondary font-data-table">${fmt(r.fr)}명</strong> (${r.frRate.toFixed(2)}%)</span>
+        </div></div>`;
+    }).join('');
+  }
+
+  function renderTable(set, setAgg) {
+    const { key, dir } = state.tableSort;
+    const sorted = [...set].sort((a, b) => key === 'name' ? dir * a.name.localeCompare(b.name, 'ko') : dir * (a[key] - b[key]));
+    const avgRate = setAgg.frRate;
+    document.querySelectorAll('#demographicTable th[data-sort]').forEach(th => {
+      const base = th.textContent.replace(/[ ▲▼]+$/, '');
+      th.textContent = base + (th.dataset.sort === key ? (dir < 0 ? ' ▼' : ' ▲') : '');
+    });
+    $('tableBody').innerHTML = sorted.map((r, i) => {
+      const k = keyOf(r), on = state.dong === k, dim = state.dong && !on;
+      return `<tr class="dong-row cursor-pointer transition-colors ${on ? 'bg-secondary-fixed/40' : (i % 2 ? 'bg-surface-container-low/40' : '')} hover:bg-surface-container-low" style="opacity:${dim ? .3 : 1}" data-key="${esc(k)}">
+        <td class="py-3 px-3 font-semibold text-on-surface whitespace-nowrap">${nameOf(r)}</td>
+        <td class="py-3 px-3 text-right font-data-table font-bold">${fmt(r.total)}</td>
+        <td class="py-3 px-3 text-right font-data-table text-on-surface-variant">${fmt(r.korM)}</td>
+        <td class="py-3 px-3 text-right font-data-table text-on-surface-variant">${fmt(r.korF)}</td>
+        <td class="py-3 px-3 text-right font-data-table text-secondary">${fmt(r.frM)}</td>
+        <td class="py-3 px-3 text-right font-data-table text-secondary">${fmt(r.frF)}</td>
+        <td class="py-3 px-3 text-right font-data-table font-bold ${r.frRate > avgRate ? 'text-secondary' : ''}">${r.frRate.toFixed(2)}%</td>
+        <td class="py-3 px-3 text-right font-data-table text-outline">${r.korSR.toFixed(1)}</td></tr>`;
+    }).join('');
+    $('tableFoot').innerHTML = `<tr class="bg-surface-container-high font-bold text-on-surface text-label-md">
+      <td class="py-3 px-3 rounded-l whitespace-nowrap">합계 (${set.length}개동)</td>
+      <td class="py-3 px-3 text-right font-data-table text-secondary">${fmt(setAgg.total)}</td>
+      <td class="py-3 px-3 text-right font-data-table">${fmt(setAgg.korM)}</td>
+      <td class="py-3 px-3 text-right font-data-table">${fmt(setAgg.korF)}</td>
+      <td class="py-3 px-3 text-right font-data-table">${fmt(setAgg.frM)}</td>
+      <td class="py-3 px-3 text-right font-data-table">${fmt(setAgg.frF)}</td>
+      <td class="py-3 px-3 text-right font-data-table text-secondary">${setAgg.frRate.toFixed(2)}%</td>
+      <td class="py-3 px-3 text-right font-data-table rounded-r">${setAgg.korSR.toFixed(1)}</td></tr>`;
+  }
+
+  function renderDonut(agg, scopeName) {
+    const segs = [
+      { label: '내국인 남', v: agg.korM, c: '#131b2e' }, { label: '내국인 여', v: agg.korF, c: '#7c839b' },
+      { label: '외국인 남', v: agg.frM, c: '#0051d5' }, { label: '외국인 여', v: agg.frF, c: '#6bd8cb' }
+    ];
+    const R = 48, C = 2 * Math.PI * R, total = agg.total || 1;
+    let off = 0;
+    $('donutSvg').innerHTML = `<circle cx="60" cy="60" r="${R}" fill="none" stroke="#eceef0" stroke-width="16"/>` + segs.map(s => {
+      const len = s.v / total * C;
+      const el = `<circle class="donut-seg" cx="60" cy="60" r="${R}" fill="none" stroke="${s.c}" stroke-width="16" stroke-dasharray="${len.toFixed(2)} ${(C - len).toFixed(2)}" stroke-dashoffset="${(-off).toFixed(2)}"><title>${s.label} ${fmt(s.v)}명</title></circle>`;
+      off += len; return el;
+    }).join('');
+    $('donutSub').textContent = `${scopeName} · 내·외국인 × 성별 4분할`;
+    $('donutTotal').textContent = fmt(agg.total);
+    $('donutFr').textContent = `외국인 ${agg.frRate.toFixed(2)}%`;
+    $('donutLegend').innerHTML = segs.map(s => `<div class="flex items-center justify-between gap-2 p-2 rounded bg-surface-container-low">
+      <span class="flex items-center gap-2 text-label-md font-label-md"><span class="w-3 h-3 rounded-sm" style="background:${s.c}"></span>${s.label}</span>
+      <span class="font-data-table text-data-table"><strong>${fmt(s.v)}</strong> <span class="text-outline">${pct(s.v, total, 1)}%</span></span></div>`).join('');
+  }
+
+  function genderBlock(title, m, f, sr) {
+    const maleDom = m >= f, tot = m + f || 1;
+    return `<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+      <div class="flex items-center justify-between gap-1"><span class="font-label-md text-label-md font-semibold">${title} (${fmt(tot)}명)</span>
+      <span class="text-label-sm font-label-sm font-bold ${maleDom ? 'text-secondary' : 'text-on-tertiary-container'}">${maleDom ? '남초' : '여초'} 현상</span></div>
+      <div class="flex items-center gap-2">
+        <div class="flex-1 flex flex-col items-center p-2 rounded bg-surface-container-lowest"><span class="material-symbols-outlined text-[20px] ${maleDom ? 'text-secondary' : 'text-on-surface-variant'}">man</span><span class="text-label-sm font-label-sm text-outline">남성 (${pct(m, tot, 1)}%)</span><span class="font-data-table text-data-table font-bold">${fmt(m)}</span></div>
+        <div class="flex-1 flex flex-col items-center p-2 rounded bg-surface-container-lowest"><span class="material-symbols-outlined text-[20px] ${!maleDom ? 'text-secondary' : 'text-on-surface-variant'}">woman</span><span class="text-label-sm font-label-sm text-outline">여성 (${pct(f, tot, 1)}%)</span><span class="font-data-table text-data-table font-bold">${fmt(f)}</span></div>
+      </div>
+      <div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden flex">
+        <div class="${maleDom ? 'bg-secondary' : 'bg-surface-dim'} h-full bar-anim" style="width:${pct(m, tot)}%"></div><div class="${!maleDom ? 'bg-secondary' : 'bg-surface-dim'} h-full bar-anim" style="width:${pct(f, tot)}%"></div>
+      </div>
+      <span class="text-body-sm font-body-sm text-outline text-center">성비 ${sr.toFixed(1)} (${maleDom ? '남성' : '여성'} +${fmt(Math.abs(m - f))}명)</span></div>`;
+  }
+
+  function renderGender(agg, set, scopeName) {
+    const kM = agg.korM >= agg.korF, fM = agg.frM >= agg.frF;
+    $('genderSub').textContent = `${scopeName} · 내국인(${kM ? '남초' : '여초'} ${pct(Math.max(agg.korM, agg.korF), agg.kor, 1)}%) vs 외국인(${fM ? '남초' : '여초'} ${pct(Math.max(agg.frM, agg.frF), agg.fr, 1)}%)`;
+    $('genderBlocks').innerHTML = genderBlock('내국인', agg.korM, agg.korF, agg.korSR) + genderBlock('외국인', agg.frM, agg.frF, agg.frSR);
+    const frFemDongs = set.filter(r => r.frF > r.frM), frMaleDongs = set.filter(r => r.frM > r.frF);
+    const extreme = [...set].sort((a, b) => b.frSR - a.frSR)[0];
+    let note = `${guLabel(state.gu)} ${set.length}개동 중 외국인 <strong>여성 우세 ${frFemDongs.length}개동</strong>, <strong>남성 우세 ${frMaleDongs.length}개동</strong>입니다.`;
+    if (extreme && extreme.frSR > 150) note += ` 특히 <strong>${esc(extreme.name)}</strong>은 외국인 성비 ${extreme.frSR.toFixed(0)}으로 남성 근로자 밀집 신호가 뚜렷해 산업단지 인력·주거 지원 수요를 점검할 필요가 있습니다.`;
+    else if (frFemDongs.length > frMaleDongs.length) note += ' 여성 우세 지역이 많아 다문화 가족·여성 근로 커뮤니티 지원책이 요구됩니다.';
+    $('genderNote').innerHTML = note;
+  }
+
+  function renderSexRatio(set) {
+    if (!set.length) { $('sexRatioPlot').innerHTML = ''; return; }
+    const MIN = 50, MAX = 200;
+    const x = v => Math.min(Math.max(v, MIN), MAX);
+    const W = 360, L = 64, Rp = 14, rowH = 22, top = 22;
+    const sx = v => L + (x(v) - MIN) / (MAX - MIN) * (W - L - Rp);
+    const sorted = [...set].sort((a, b) => b.total - a.total);
+    const H = top + sorted.length * rowH + 6;
+    let svg = `<svg viewBox="0 0 ${W} ${H}" class="w-full h-auto max-w-[520px] mx-auto block" font-family="Noto Sans KR, sans-serif">`;
+    [50, 100, 150, 200].forEach(t => {
+      svg += `<line x1="${sx(t)}" x2="${sx(t)}" y1="${top - 6}" y2="${H - 4}" stroke="${t === 100 ? '#76777d' : '#e0e3e5'}" stroke-width="${t === 100 ? 1.2 : 1}" ${t === 100 ? '' : 'stroke-dasharray="2 3"'}/>`;
+      svg += `<text x="${sx(t)}" y="12" font-size="9" text-anchor="middle" fill="#76777d" font-family="JetBrains Mono">${t === 200 ? '200+' : t}</text>`;
+    });
+    sorted.forEach((r, i) => {
+      const y = top + i * rowH + rowH / 2, on = state.dong === keyOf(r);
+      const a = sx(r.korSR), b = sx(r.frSR);
+      svg += `<g opacity="${state.dong && !on ? .3 : 1}">`;
+      if (on) svg += `<rect x="0" y="${y - rowH / 2 + 1}" width="${W}" height="${rowH - 2}" rx="3" fill="#dbe1ff" opacity=".6"/>`;
+      svg += `<text x="${L - 8}" y="${y + 3.5}" font-size="10" text-anchor="end" fill="#191c1e" font-weight="${on ? 700 : 500}">${esc(r.name)}</text>`;
+      svg += `<line x1="${Math.min(a, b)}" x2="${Math.max(a, b)}" y1="${y}" y2="${y}" stroke="#c6c6cd" stroke-width="2"/>`;
+      svg += `<circle cx="${a}" cy="${y}" r="4.5" fill="#000"><title>${esc(r.name)} 내국인 성비 ${r.korSR.toFixed(1)}</title></circle>`;
+      svg += `<circle cx="${b}" cy="${y}" r="4.5" fill="#316bf3" stroke="#fff" stroke-width="1"><title>${esc(r.name)} 외국인 성비 ${r.frSR.toFixed(1)}</title></circle>`;
+      if (r.frSR > MAX) svg += `<text x="${b - 7}" y="${y - 6}" font-size="8.5" text-anchor="end" fill="#0051d5" font-family="JetBrains Mono">${r.frSR.toFixed(0)}</text>`;
+      svg += `</g>`;
+    });
+    svg += `</svg>`;
+    $('sexRatioPlot').innerHTML = svg;
+  }
+
+  function renderDensity(set) {
+    const sorted = [...set].sort((a, b) => b.frRate - a.frRate);
+    const max = Math.max(...sorted.map(r => r.frRate), 0.01);
+    const maxFr = Math.max(...sorted.map(r => r.fr), 0);
+    const tone = i => i === 0 ? ['bg-secondary', 'bg-secondary-fixed/30 hover:bg-secondary-fixed/50', 'text-secondary']
+      : i < 3 ? ['bg-secondary-container', 'bg-surface-container-low hover:bg-surface-container', 'text-on-surface']
+      : i < 6 ? ['bg-outline', 'bg-surface-container-low hover:bg-surface-container', 'text-on-surface']
+      : ['bg-outline-variant', 'bg-surface-container-low hover:bg-surface-container', 'text-on-surface'];
+    $('densityList').innerHTML = sorted.map((r, i) => {
+      const [dot, bg, txt] = tone(i), k = keyOf(r), dim = state.dong && state.dong !== k;
+      return `<div class="dong-card cursor-pointer flex items-center justify-between gap-2 p-2.5 rounded-lg ${bg} transition-colors" style="opacity:${dim ? .35 : 1}" data-key="${esc(k)}">
+        <div class="flex items-center gap-space-sm min-w-0"><div class="w-2.5 h-2.5 rounded-full shrink-0 ${dot}"></div>
+          <span class="font-headline-sm text-headline-sm whitespace-nowrap">${nameOf(r)}</span>
+          <span class="text-label-sm font-label-sm text-on-surface-variant truncate">${fmt(r.fr)}명${r.fr === maxFr ? ' (최대인원)' : ''}</span></div>
+        <div class="flex items-center gap-space-sm shrink-0"><div class="w-20 sm:w-24 bg-surface-container-highest h-2 rounded-full overflow-hidden"><div class="${dot} h-full bar-anim" style="width:${(r.frRate / max * 100).toFixed(1)}%"></div></div>
+          <span class="font-data-table text-data-table font-bold ${txt} text-right w-14">${r.frRate.toFixed(2)}%</span></div></div>`;
+    }).join('');
+  }
+
+  function renderInsights(set, setAgg) {
+    if (!set.length) { $('insightList').innerHTML = ''; return; }
+    const by = (k, d = -1) => [...set].sort((a, b) => d * (a[k] - b[k]))[0];
+    const top = by('total'), rate = by('frRate'), cnt = by('fr'), kor = by('frRate', 1);
+    const balanced = [...set].sort((a, b) => Math.abs(a.korSR - 100) - Math.abs(b.korSR - 100))[0];
+    const li = (t, b) => `<li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed mt-1.5 shrink-0"></span><span><strong class="text-on-primary">${t}:</strong> ${b}</span></li>`;
+    const items = [
+      li(`${esc(top.name)} 인구 집약`, `${fmt(top.total)}명으로 ${guLabel(state.gu)} ${set.length}개동 전체의 ${pct(top.total, setAgg.total, 1)}%를 차지해 보육·학군 및 교통 인프라 투자 우선 권역으로 도출됩니다.`),
+      li(rate === cnt ? `${esc(rate.name)} 다문화 클러스터` : `${esc(rate.name)}·${esc(cnt.name)} 다문화 클러스터`,
+        rate === cnt ? `외국인 ${fmt(cnt.fr)}명, 비율 ${rate.frRate.toFixed(1)}%로 인원과 비중 모두 1위여서 다문화 행정 거점 지정이 효과적입니다.`
+          : `외국인 비율 ${rate.frRate.toFixed(1)}%(${esc(rate.name)}) 및 ${fmt(cnt.fr)}명(${esc(cnt.name)}) 집중 지역으로 다문화 행정 거점 지정이 효과적입니다.`),
+      li(`${esc(kor.name)}의 정주 안정성`, `내국인 비율 ${pct(kor.kor, kor.total, 1)}%로 가장 높습니다.` + (balanced === kor ? ` 내국인 성비(${kor.korSR.toFixed(1)})도 가장 균형적인 전통 거주지구입니다.` : ` 내국인 성비가 가장 균형적인 곳은 ${esc(balanced.name)}(${balanced.korSR.toFixed(1)})입니다.`))
+    ];
+    if (setAgg.frRate) items.push(li('외국인 평균 비중', `${guLabel(state.gu)} 평균 ${setAgg.frRate.toFixed(2)}% · 평균을 넘는 동은 ${set.filter(r => r.frRate > setAgg.frRate).length}개입니다.`));
+    $('insightList').innerHTML = items.join('');
+  }
+
+  function buildGuSelect() {
+    const gus = [...new Set(state.rows.map(r => r.guShort))];
+    const sel = $('guSelect');
+    sel.innerHTML = `<option value="all">안산시 전체 (${state.rows.length}개동)</option>` +
+      gus.map(g => `<option value="${esc(g)}">${esc(g)} (${state.rows.filter(r => r.guShort === g).length}개동)</option>`).join('');
+    sel.value = state.gu;
+  }
+
+  function updateStatus() {
+    const t = state.lastFetch ? state.lastFetch.toLocaleTimeString('ko-KR', { hour12: false }) : '—';
+    const ok = !state.offline;
+    $('liveDot').className = 'inline-block w-1.5 h-1.5 rounded-full ' + (ok ? 'bg-secondary live-dot' : 'bg-error');
+    $('liveText').textContent = ok ? `LIVE · 구글 시트 실시간 연동 · 마지막 갱신 ${t}` : `오프라인 · 저장된 데이터 표시 중 (${t})`;
+    $('chipText').textContent = `데이터 기준: ${state.rows[0]?.date || '—'} · 수신 ${t}`;
+    $('sideCount').textContent = `관할 ${state.rows.length}개 행정동`;
+    $('sideStatus').textContent = ok ? '정상 연동' : '연결 오류';
+    $('sideStatus').className = 'font-data-table text-data-table font-bold ' + (ok ? 'text-secondary' : 'text-error');
+    $('sideInfo').textContent = `원본 ${state.rows.length + state.dupCount}행 · 중복 ${state.dupCount}행 제외`;
+    $('insightTime').textContent = `UPDATED ${t}`;
+  }
+
+  function tick() {
+    if (state.interval > 0) {
+      state.remaining--;
+      $('countdownText').textContent = `다음 자동 갱신까지 ${Math.max(state.remaining, 0)}초`;
+      if (state.remaining <= 0) load(false);
+    } else $('countdownText').textContent = '자동 갱신 꺼짐';
+  }
+
+  // ---------- events ----------
+  document.addEventListener('click', e => {
+    const card = e.target.closest('.dong-card, .dong-row, .dong-pill');
+    if (card) {
+      const k = card.dataset.key || null;
+      state.dong = (k && state.dong !== k) ? k : (card.classList.contains('dong-pill') ? k : null);
+      render(); return;
+    }
+    const gu = e.target.closest('.gu-bar');
+    if (gu) { state.gu = state.gu === gu.dataset.gu ? 'all' : gu.dataset.gu; state.dong = null; $('guSelect').value = state.gu; render(); return; }
+    const rs = e.target.closest('.rank-sort');
+    if (rs) {
+      state.rankSort = rs.dataset.key;
+      document.querySelectorAll('.rank-sort').forEach(b => {
+        const on = b === rs;
+        b.classList.toggle('bg-primary', on); b.classList.toggle('text-on-primary', on); b.classList.toggle('shadow-sm', on);
+        b.classList.toggle('text-on-surface-variant', !on);
+      });
+      render(); return;
+    }
+    const th = e.target.closest('th[data-sort]');
+    if (th) {
+      const k = th.dataset.sort;
+      state.tableSort = state.tableSort.key === k ? { key: k, dir: -state.tableSort.dir } : { key: k, dir: k === 'name' ? 1 : -1 };
+      render();
+    }
+  });
+  $('guSelect').addEventListener('change', e => { state.gu = e.target.value; state.dong = null; render(); });
+  $('searchInput').addEventListener('input', e => { state.query = e.target.value.trim(); state.dong = null; render(); });
+  $('intervalSelect').addEventListener('change', e => { state.interval = Number(e.target.value); state.remaining = state.interval; tick(); });
+  $('btnRefresh').addEventListener('click', () => load(true));
+  $('btnExportCsv').addEventListener('click', () => {
+    const set = scopeRows(), a = sum(set);
+    const head = ['구', '행정동', '전체인구', '내국인', '내국인(남)', '내국인(여)', '외국인', '외국인(남)', '외국인(여)', '외국인비중(%)', '내국성비', '기준일자'];
+    const line = r => [r.guShort, r.name, r.total, r.kor, r.korM, r.korF, r.fr, r.frM, r.frF, r.frRate.toFixed(2), r.korSR.toFixed(1), r.date];
+    const data = [head, ...set.map(line), ['합계', `${set.length}개동`, a.total, a.kor, a.korM, a.korF, a.fr, a.frM, a.frF, a.frRate.toFixed(2), a.korSR.toFixed(1), state.rows[0]?.date || '']];
+    const blob = new Blob(['﻿' + data.map(r => r.join(',')).join('\n')], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = `ansan_demographics_${state.gu === 'all' ? 'all' : state.gu}_${(state.rows[0]?.date || '').replace(/-/g, '')}.csv`;
+    document.body.appendChild(link); link.click(); link.remove();
+  });
+
+  // nav active state on scroll
+  const sections = ['sec-kpi', 'sec-gu', 'sec-rank', 'sec-foreign', 'sec-gender', 'sec-table'];
+  window.addEventListener('scroll', () => {
+    let cur = sections[0];
+    sections.forEach(id => { const el = $(id); if (el && el.getBoundingClientRect().top < 180) cur = id; });
+    document.querySelectorAll('.side-link').forEach(a => {
+      const on = a.getAttribute('href') === '#' + cur;
+      a.classList.toggle('bg-primary', on); a.classList.toggle('text-on-primary', on); a.classList.toggle('font-semibold', on); a.classList.toggle('shadow-sm', on);
+      a.classList.toggle('text-on-surface-variant', !on);
+    });
+    document.querySelectorAll('.top-link').forEach(a => {
+      const on = a.getAttribute('href') === '#' + cur;
+      a.classList.toggle('text-secondary', on); a.classList.toggle('font-semibold', on); a.classList.toggle('text-on-surface-variant', !on);
+    });
+  }, { passive: true });
+
+  // skeleton placeholders
+  $('sec-kpi').innerHTML = Array(4).fill('<div class="h-36 rounded-xl skeleton"></div>').join('');
+  $('rankList').innerHTML = Array(5).fill('<div class="h-16 rounded-lg skeleton"></div>').join('');
+
+  load(false);
+  setInterval(tick, 1000);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden && state.interval && state.remaining <= 0) load(false); });
+})();
+</script>
+</body></html>
